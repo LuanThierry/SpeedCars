@@ -1,0 +1,403 @@
+
+
+
+
+@media(max-width: 1024px){
+	header, header.touch{
+		padding: 12px 15px;
+	}
+	header .navegation{
+		display: none;
+	}
+	header .menuToggle span{
+		background:lightgreen;
+	}
+	.menuToggle{
+		position: relative;
+		width: 40px;
+		height: 40px;
+
+	}
+	header.touch .menuToggle span{
+		background: #7c4dff;
+	}
+	.menuToggle span{
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		transition: .5s ease-in-out;
+	}
+	.menuToggle span:nth-child(2){
+		position: absolute;
+		margin-top: 15px;
+		width: 100%;
+		height: 2px;
+	}
+	.menuToggle span:nth-child(3){
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		margin-top: 30px;
+	}
+	.menuToggle.active{
+		transition: 4s ease-in-out;
+		z-index: 100000;
+	}
+	.menuToggle.active span:nth-child(1){
+		transform: rotate(-45deg) translate(-10px, 10px);
+		height: 3px;
+		width: 100%;
+	}
+	.menuToggle.active span:nth-child(2) {
+		width: 0%;
+
+	}
+	.menuToggle.active span:nth-child(3) {
+		transform: rotate(45deg) translate(-10px, -10px);
+		height: 3px;
+		width: 100%;
+	}
+
+	header .navegation.active{
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: white;
+		text-shadow: none;
+		transition: .8s ease-in-out;
+	}
+	header .navegation li {
+		margin: 0;
+	}
+	header .navegation li a{
+		font-size: 1.6em;
+		font-weight: 400;
+		padding: 0;
+		margin: 3rem;
+	}
+
+
+
+
+
+
+	.about .row{
+	margin: 0.8rem 0 0 0;
+	}
+	.reviews .content .box{
+		width: 250px;
+		padding: 20px;
+		margin: 2rem 1.5rem 0 1.5rem;
+	}
+	.carmodels .content .box {
+		margin: 1rem;
+		width: 250px;
+	}
+
+	.carmodels .content .box .imBx{
+	width: 100%;
+	height: 140px;
+	border-radius: 5px;
+	}
+}
+
+
+@media(min-width: 915px){	
+	.experts .content .box{
+		width:200px;
+		margin:1rem 3.5rem;
+	}
+	.experts{
+		width: 100%;
+		height: 120vh;
+	}
+	.experts .content .box .imBx {
+		width: 100%;
+		height: 100px;
+		border-radius: 3px;
+	}
+	.experts .content .box .text{
+		font-size: 0.8rem;
+	}
+
+	.banner .content h2{
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: lightgreen;
+	}
+	.banner .content p{
+		font-size: 0.8rem;
+		margin:1rem 0;
+		text-align: center;
+	}
+	.btn{
+		font-size: 1rem;
+		padding: 15px 25px; 
+	}
+	.reviews{
+		height: 80vh;
+	}
+	.reviews .content .box{
+		width: 200px;
+		padding: 10px;
+		margin: 2rem 0.5rem 0 0.5rem;
+	}
+
+	.reviews .content .box .imBx{
+		width: 	50px;
+		height: 50px;
+	}
+
+	.experts{
+		height: 90vh;
+	}
+
+	.carmodels .content .box .imBx img{
+		border-radius: 9px;
+		filter: blur(0px);
+		opacity: 1;
+		border: none;
+	}
+	.carmodels .content .box .imBx img:hover{
+		filter: blur(0px);
+		border: none;
+	    transform: scale(1);
+	}
+	
+	.banner .content {
+		justify-content: center;
+		align-items: center;
+		padding: 5rem;
+	}
+	.banner .content .btn{
+		margin: 20em 0 0 0;
+	}
+	.about{
+		height: 130vh;
+		padding: 100px 50px;
+	}
+	.c2c{
+		display: none;
+	}
+	.about .row .col{
+		width: 100%;
+		text-align: center;
+	}
+	.about .row .col h2{
+		font-size: 30px;
+	}
+	.about .row{
+		width: 100%;
+	}
+	.about .row .col p{
+		font-size: 16px;
+	}
+
+	.reviews{
+		height: 170vh;
+	}
+	.reviews .content .box{
+		width: 380px;
+		padding: 20px;
+		margin: 2rem 0.5rem 0 0.5rem;
+	}
+
+	.reviews .content .box .imBx{
+		width: 	70px;
+		height: 70px;
+	}
+
+	.experts{
+		height: 100vh;
+	}
+	.experts .content{
+		padding: 0;
+	}
+	.experts .content .box{
+		width: 45%;
+		margin:1rem 0.1rem 0 0.1rem;
+		padding: 0;
+	}
+	.experts .content .box .imBx{
+		height:50
+		30px;
+		background-size: auto auto;
+	}
+	.experts .content .box .imBx img{
+		border-radius: 5px;
+	}
+
+
+
+	.carmodels{
+		height: 130vh;
+	}
+	.carmodels .content{
+		height: 100vh;
+	}
+	.carmodels .content .box{
+		width: 150px;
+		height: 80px;
+		margin: 1rem 1rem;
+	}
+	.carmodels .content .box .imBx{
+		height: 100%;
+		width: 100%;
+	}
+
+
+
+	.contact{
+	}
+	.contact .content{
+		border-radius: 0 0 0 0;
+	}
+	.contact .content .form{
+		border-radius: 0 0 0 0;
+	}
+	.contact .content .form .bx{
+		width: 100%;
+
+	}
+	.contact .content .form .box-content{
+		width: 100%;
+		box-shadow: none;
+		border-radius: 0 0 0 0;
+		height: 100%;
+	}
+	.contact .content .form .box-img, .contact .content .form .box-img img{
+		display: none;
+	}
+}
+
+
+
+@media(max-width: 360px){
+	.banner{
+		height: 100vh; 
+
+	}
+	.banner .content {
+		justify-content: center;
+		align-items: center;
+		padding: 5rem;
+	}
+	.banner .content .btn{
+		margin: 3em 0 0 0;
+	}
+	.about{
+		height: 130vh;
+		padding: 70px 50px 0 50px;
+	}
+	.c2c{
+		display: none;
+	}
+	.about .row .col{
+		width: 100%;
+		text-align: center;
+	}
+	.about .row .col h2{
+		font-size: 30px;
+	}
+	.about .row{
+		width: 100%;
+	}
+	.about .row .col p{
+		font-size: 12px;
+	}
+
+	.reviews .title{
+		margin: 4rem 0 0 0;
+	}
+	.reviews{
+		height: 170vh;
+	}
+	.reviews .content .box{
+		width: 100%;
+		padding: 20px;
+		margin: 2rem 0.5rem 0 0.5rem;
+	}
+
+	.reviews .content .box .imBx{
+		width: 	70px;
+		height: 70px;
+	}
+
+	.experts .title{
+		margin: 4rem 0 0 0;
+	}
+	.experts{
+		height: 100vh;
+	}
+	.experts .content{
+		padding: 0;
+	}
+	.experts .content .box{
+		width: 45%;
+		margin:1rem 0.1rem 0 0.1rem;
+		padding: 0;
+	}
+	.experts .content .box .imBx{
+		height:50
+		30px;
+		background-size: auto auto;
+	}
+	.experts .content .box .imBx img{
+		border-radius: 5px;
+	}
+
+
+
+	.carmodels .title{
+		margin: 4rem 0 0 0;
+	}
+	.carmodels{
+		height: 130vh;
+	}
+	.carmodels .content{
+		height: 100vh;
+	}
+	.carmodels .content .box{
+		width: 130px;
+		height: 80px;
+		margin: 1rem 1rem;
+	}
+	.carmodels .content .box .imBx{
+		height: 100%;
+		width: 100%;
+	}
+
+
+
+	.contact{
+	}
+	.contact .content{
+		border-radius: 0 0 0 0;
+	}
+	.contact .content .form{
+		border-radius: 0 0 0 0;
+	}
+	.contact .content .form .bx{
+		width: 100%;
+
+	}
+	.contact .content .form .box-content{
+		width: 100%;
+		box-shadow: none;
+		border-radius: 0 0 0 0;
+		height: 100%;
+	}
+	.contact .content .form .box-img, .contact .content .form .box-img img{
+		display: none;
+	}
+
+	
+}
+
+
